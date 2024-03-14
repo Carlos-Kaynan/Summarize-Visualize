@@ -1,7 +1,14 @@
 import google.generativeai as genai
 from openai import OpenAI
 import streamlit as st
-
+import json
+import os
+import requests
+import io
+import uuid
+from tempfile import NamedTemporaryFile
+from pathlib import Path
+from PIL import Image
 
 def resumo_descricao(model, arquivo, qtd_topicos):
   comando_resumo = 'resuma desse texto: '
