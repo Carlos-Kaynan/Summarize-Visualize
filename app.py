@@ -10,9 +10,14 @@ from tempfile import NamedTemporaryFile
 from pathlib import Path
 from PIL import Image
 
+import google.generativeai as genai
+from openai import OpenAI
+import streamlit as st
+
+
 def resumo_descricao(model, arquivo, qtd_topicos):
   comando_resumo = 'resuma desse texto: '
-  comando_descricao = ('descreva esse resumo como uma imagem: ')
+  comando_descricao = ('descreva esse resumo como uma imagem, nessa quantidade de topicos: ')
 
   resumo = model.generate_content({comando_resumo + arquivo})
 
@@ -20,7 +25,7 @@ def resumo_descricao(model, arquivo, qtd_topicos):
     st.markdown("## Resumo")
     st.write(resumo.text)
 
-  descricao = model.generate_content({comando_descricao + resumo.text})
+  descricao = model.generate_content({comando_descricao + resumo.text + qtd_topicos})
 
   with st.container():
     st.markdown("## Descrição")
