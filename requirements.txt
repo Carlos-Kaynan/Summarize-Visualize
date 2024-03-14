@@ -1,0 +1,10 @@
+replicate
+google-generativeai
+pydub
+streamlit
+requests
+Pillow
+openai
+elevenlabs==0.3.0b0
+IPython
+moviepy
