@@ -1,6 +1,8 @@
 # Summarize-Visualize
 
-Summarize & Visualize é um aplicativo Streamlit que gera um resumo com base em um texto fornecido pelo usuário e, em seguida, cria uma imagem com alguns tópicos importantes extraídos desse resumo. O aplicativo utiliza várias APIs, incluindo a API Gemini para a geração de texto e a API OpenAI para a criação de imagens.
+- Desenvolvemos esta aplicação como parte do projeto final da disciplina de Criatividade Computacional.
+
+- Summarize & Visualize é um aplicativo Streamlit que gera um resumo com base em um texto fornecido pelo usuário e, em seguida, cria uma imagem com alguns tópicos importantes extraídos desse resumo. O aplicativo utiliza várias APIs, incluindo a API Gemini para a geração de texto e a API OpenAI para a criação de imagens.
 
 ## Como usar
 
