@@ -12,7 +12,7 @@
 
 ## Entrada
 
-- Texto: Você devera fornecer um arquivo.txt para gerar um resumo.
+- Texto: Você devera fornecer um arquivo .txt para gerar um resumo.
 
 ## Chaves da API
 
